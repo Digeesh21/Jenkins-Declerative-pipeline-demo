@@ -1,5 +1,11 @@
-stage("Build"){
-Steps{ 
-   echo"Run Build"
- }
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
